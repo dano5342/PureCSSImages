@@ -50,6 +50,7 @@ body {
   background: #a6becf;
   border-radius: 50%;
   z-index: 1;
+  animation: spinMe 3s infinite;
 }
 
 .ear-right {
@@ -61,6 +62,7 @@ body {
   background: #a6becf;
   border-radius: 50%;
   z-index: 1;
+  animation: spinMe 3s infinite;
 }
 
 .inner-ear {
@@ -123,17 +125,41 @@ body {
   width: 20%;
   height: 20%;
   background: #A6BECF;
+  -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
   clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 }
 
 .hair-right {
   position: absolute;
-  top: -6%;
+  top: -4%;
   left: 48%;
   width: 20%;
   height: 20%;
   background: #A6BECF;
+  -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
   clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+@media all and (max-width: 600px) {
+  .box {
+    position: relative;
+    margin: auto;
+    display: block;
+    margin-top: 2%;
+    width: 400px;
+    height: 280px;
+    background: none;
+  }
+}
+@keyframes spinMe {
+  0% {
+    transform: rotate(0deg);
+    background: #a6becf;
+  }
+  100% {
+    transform: rotate(360deg);
+    background: #333333;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

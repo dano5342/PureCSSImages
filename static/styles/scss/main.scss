@@ -1,5 +1,5 @@
 $blue: #259afc;
-$pupil:  #27354a;
+$pupil: #27354a;
 $dark-grey: #819caf;
 $light-grey: #a6becf;
 
@@ -57,7 +57,7 @@ body {
     background: $light-grey;
     border-radius: 50%;
     z-index: 1;
-		animation: spinMe 3s infinite;
+    animation: spinMe 3s infinite;
 
 }
 
@@ -70,7 +70,7 @@ body {
     background: $light-grey;
     border-radius: 50%;
     z-index: 1;
-		animation: spinMe 3s infinite;
+    animation: spinMe 3s infinite;
 }
 
 .inner-ear {
@@ -82,6 +82,7 @@ body {
     left: 10%;
     background: $dark-grey;
 }
+
 .eye-left {
     position: absolute;
     background: white;
@@ -127,52 +128,53 @@ body {
 
 
 
-.hair-left{
-  position: absolute;
-  top: -8%;
-  left: 30%;
-  width: 20%;
-	height: 20%;
-	background:  #A6BECF;
-	-webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+.hair-left {
+    position: absolute;
+    top: -8%;
+    left: 30%;
+    width: 20%;
+    height: 20%;
+    background: #A6BECF;
+    -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 }
 
-.hair-right{
-  position: absolute;
-  top: -4%;
-  left: 48%;
-  width: 20%;
-	height: 20%;
-	background:  #A6BECF;
-	-webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+.hair-right {
+    position: absolute;
+    top: -4%;
+    left: 48%;
+    width: 20%;
+    height: 20%;
+    background: #A6BECF;
+    -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 }
 
 @media all and (max-width: 600px) {
-  .box{
-    position: relative;
-    margin: auto;
-    display: block;
-    margin-top: 2%;
-    width: 400px;
-    height: 280px;
-    background: none;
+    .box {
+        position: relative;
+        margin: auto;
+        display: block;
+        margin-top: 2%;
+        width: 400px;
+        height: 280px;
+        background: none;
 
-  }
+    }
 }
 
 // Animations
 // Animation of spinMe
 // The percentages give you the amount of time in the anim, specified in the animate: css rule
 @keyframes spinMe {
-	0% {
-		// CSS values here, add to 
-		transform: rotate(0deg);
-		background: #a6becf;
-	}
-	100% {
-		transform: rotate(360deg);
-		background: #333333;
-	}
+    0% {
+        // CSS values here, add to 
+        transform: rotate(0deg);
+        background: #a6becf;
+    }
+
+    100% {
+        transform: rotate(360deg);
+        background: #333333;
+    }
 }
