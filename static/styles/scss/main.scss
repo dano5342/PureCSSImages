@@ -3,13 +3,6 @@ $pupil:  #27354a;
 $dark-grey: #819caf;
 $light-grey: #a6becf;
 
-
-// Shapes
-$circle: 50%;
-$triangle: polygon(50% 0%, 0% 100%, 100% 100%);
-$rounded-rectangle: 50px;
-
-
 body {
     background: $blue;
 }
@@ -29,10 +22,10 @@ body {
     position: absolute;
     top: 16.5%;
     left: 25%;
-    width: $circle;
+    width: 50%;
     height: 67%;
     background: $light-grey;
-    border-radius: $circle;
+    border-radius: 50%;
     z-index: 0;
 }
 
@@ -51,7 +44,7 @@ body {
     height: 100%;
     position: absolute;
     background: $light-grey;
-    border-radius: $circle;
+    border-radius: 50%;
     z-index: 2;
 }
 
@@ -62,8 +55,10 @@ body {
     left: -20%;
     top: 5%;
     background: $light-grey;
-    border-radius: $circle;
+    border-radius: 50%;
     z-index: 1;
+		animation: spinMe 3s infinite;
+
 }
 
 .ear-right {
@@ -73,13 +68,14 @@ body {
     right: -20%;
     top: 5%;
     background: $light-grey;
-    border-radius: $circle;
+    border-radius: 50%;
     z-index: 1;
+		animation: spinMe 3s infinite;
 }
 
 .inner-ear {
     position: absolute;
-    border-radius: $circle;
+    border-radius: 50%;
     width: 80%;
     height: 80%;
     top: 10%;
@@ -93,7 +89,7 @@ body {
     height: 33%;
     top: 25%;
     left: 21%;
-    border-radius: $circle;
+    border-radius: 50%;
     z-index: 3;
 }
 
@@ -104,7 +100,7 @@ body {
     height: 33%;
     top: 25%;
     right: 21%;
-    border-radius: $circle;
+    border-radius: 50%;
     z-index: 3;
 }
 
@@ -125,28 +121,58 @@ body {
     height: 42.5%;
     left: 37%;
     top: 47%;
-    border-radius: $rounded-rectangle;
+    border-radius: 50px;
     z-index: 4;
 }
 
 
-.hair-left {
-    position: absolute;
-    top: -8%;
-    left: 30%;
-    width: 20%;
-    height: 20%;
-    background: #A6BECF;
-    clip-path: $triangle;
+
+.hair-left{
+  position: absolute;
+  top: -8%;
+  left: 30%;
+  width: 20%;
+	height: 20%;
+	background:  #A6BECF;
+	-webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 }
 
+.hair-right{
+  position: absolute;
+  top: -4%;
+  left: 48%;
+  width: 20%;
+	height: 20%;
+	background:  #A6BECF;
+	-webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
 
-.hair-right {
-    position: absolute;
-    top: -6%;
-    left: 48%;
-    width: 20%;
-    height: 20%;
-    background: #A6BECF;
-    clip-path: $triangle;
+@media all and (max-width: 600px) {
+  .box{
+    position: relative;
+    margin: auto;
+    display: block;
+    margin-top: 2%;
+    width: 400px;
+    height: 280px;
+    background: none;
+
+  }
+}
+
+// Animations
+// Animation of spinMe
+// The percentages give you the amount of time in the anim, specified in the animate: css rule
+@keyframes spinMe {
+	0% {
+		// CSS values here, add to 
+		transform: rotate(0deg);
+		background: #a6becf;
+	}
+	100% {
+		transform: rotate(360deg);
+		background: #333333;
+	}
 }

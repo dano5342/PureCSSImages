@@ -1,0 +1,83 @@
+body {
+  background: #210e3d;
+}
+
+.box {
+  position: relative;
+  display: block;
+  margin: auto;
+  margin-top: 8%;
+  height: 400px;
+  width: 600px;
+}
+
+.large-bottom-triangle {
+  position: absolute;
+  width: 50%;
+  left: 25%;
+  bottom: 5%;
+  height: 55%;
+  background: #EA6C00;
+  clip-path: polygon(100% 0, 0 0, 50% 100%);
+}
+
+.medium-bottom-triangle {
+  position: absolute;
+  height: 100%;
+  width: 60%;
+  left: 20%;
+  background: #FDAD00;
+  clip-path: polygon(100% 0, 0 0, 50% 100%);
+}
+
+.large-top-triangle {
+  position: absolute;
+  height: 30%;
+  width: 30%;
+  background: #FEEEB7;
+  left: 35%;
+  top: 10.15%;
+  clip-path: polygon(100% 100%, 50% 0, 0 100%);
+}
+
+.right-top-triangle-left {
+  position: absolute;
+  clip-path: polygon(100% 100%, 100% 0, 0 100%);
+  background: #FDAD00;
+  height: 30%;
+  width: 10.1%;
+  top: 10.1%;
+  left: 25%;
+}
+
+.right-top-triangle-right {
+  position: absolute;
+  clip-path: polygon(100% 100%, 0 0, 0 100%);
+  background: #FDAD00;
+  height: 30%;
+  width: 10.1%;
+  top: 10.1%;
+  right: 25%;
+}
+
+.medium-top-triangle-left {
+  position: absolute;
+  clip-path: polygon(0 100%, 100% 0, 0 0);
+  background: #FDD231;
+  width: 15.1%;
+  height: 30%;
+  left: 35%;
+  top: 10.15%;
+}
+
+.medium-top-triangle-right {
+  position: absolute;
+  clip-path: polygon(100% 100%, 100% 0, 0 0);
+  background: #FDD231;
+  width: 15.1%;
+  height: 30%;
+  right: 35%;
+  top: 10.15%;
+}
+
+/*# sourceMappingURL=diamond.css.map */
