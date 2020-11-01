@@ -31,7 +31,7 @@ body {
   top: -10%;
   border-radius: 2rem;
   border: 0.5px solid #CB997C;
-  animation: foldTop 4s infinite;
+  animation: foldTop 2s 1;
 }
 
 .left-leg {
@@ -51,7 +51,7 @@ body {
   border-radius: 2rem;
   border: 0.5px solid #CB997C;
   box-shadow: 1px 1px 0.5px #BD7965;
-  animation: foldLeft 4s infinite;
+  animation: foldLeft 2s 1;
 }
 
 .bolt {
@@ -63,7 +63,7 @@ body {
   z-index: 2;
   left: 49%;
   top: 41%;
-  animation: foldBolt 4s infinite;
+  animation: foldBolt 2s 1;
 }
 
 .right-leg {
@@ -83,7 +83,7 @@ body {
   border-radius: 2rem;
   border: 0.5px solid #CB997C;
   box-shadow: 4px 3px 2px 0.5px #BD7965;
-  animation: foldRight 4s infinite;
+  animation: foldRight 2s 1;
 }
 
 .table-cloth {
@@ -98,13 +98,21 @@ body {
   top: -20%;
   border-radius: 1em 1em 0 0;
   box-shadow: 2px 2px 1px lightgrey;
+  animation: clothAnim 2s 1;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.vase {
+  position: absolute;
+  background-color: aquamarine;
+  z-index: 2;
+  clip-path: polygon(0 5%, 100% 5%, 75% 100%, 25% 100%);
 }
 
 @keyframes foldTop {
   0% {
-    top: -10%;
-  }
-  50% {
     top: 75%;
   }
   100% {
@@ -113,14 +121,6 @@ body {
 }
 @keyframes foldLeft {
   0% {
-    top: 35%;
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-  }
-  50% {
     top: 75%;
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
@@ -138,9 +138,6 @@ body {
 }
 @keyframes foldBolt {
   0% {
-    top: 41%;
-  }
-  50% {
     top: 75%;
   }
   100% {
@@ -149,14 +146,6 @@ body {
 }
 @keyframes foldRight {
   0% {
-    top: 35%;
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-  }
-  50% {
     top: 75%;
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
@@ -172,6 +161,13 @@ body {
     transform: rotate(-45deg);
   }
 }
-@keyframes clothAnim {}
+@keyframes clothAnim {
+  0% {
+    top: -100%;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
 /*# sourceMappingURL=table.css.map */
