@@ -1,0 +1,84 @@
+body {
+  background-color: grey;
+}
+
+.box {
+  position: relative;
+  margin: auto;
+  display: block;
+  margin-top: 8%;
+  width: 600px;
+  height: 420px;
+  background: none;
+  border: solid 3px white;
+}
+
+.table-container {
+  position: absolute;
+  width: 80%;
+  height: 60%;
+  top: 50.5%;
+  left: 10%;
+}
+
+.top {
+  margin: auto;
+  position: absolute;
+  width: 75%;
+  height: 8%;
+  background-color: #BD7965;
+  z-index: 2;
+  left: 12%;
+  top: -10%;
+  border-radius: 2rem;
+  border: 0.5px solid #CB997C;
+}
+
+.left-leg {
+  margin: auto;
+  width: 65%;
+  height: 5%;
+  background-color: #BD7965;
+  z-index: 1;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  left: 15%;
+  position: absolute;
+  top: 35%;
+  border-radius: 2rem;
+  border: 0.5px solid #CB997C;
+}
+
+.bolt {
+  width: 0.4em;
+  height: 0.4em;
+  border-radius: 0.2em;
+  background-color: silver;
+  position: absolute;
+  z-index: 3;
+  left: 49%;
+  top: 41%;
+}
+
+.right-leg {
+  margin: auto;
+  width: 65%;
+  height: 5%;
+  background-color: #BD7965;
+  z-index: 1;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  right: 15%;
+  position: absolute;
+  top: 35%;
+  border-radius: 2rem;
+  border: 0.5px solid #CB997C;
+}
+
+/*# sourceMappingURL=table.css.map */
