@@ -11,3 +11,5 @@ I'd endeavoured to try and improve my design skills and have started myself on t
 ---
 ![switch](static/images/switch.png)
 
+---
+![table](static/images/tableanim2.gif)
