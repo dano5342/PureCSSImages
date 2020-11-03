@@ -167,34 +167,103 @@ body {
     height: 100%;
 }
 .flower-head {
-
+    position: absolute;
+    top: -34%;
+    left: 46%;
+    animation: spinFlower 2s 3;
+    animation-delay: 3s;
+    z-index: 999;
 }
 .flower-stem {
     width: 4px;
     height: 60px;
     background-color: green;
     position: absolute;
-    top: -12%;
+    top: -30%;
     left: 47%;
     filter: none;
 }
-.stem-2 {
-    width: 3px;
-    height: 60px;
-    background-color: lime;
-    transform: rotate(35deg);
-    top: -74%;
-    left: 47%;
+.bulb {
     position: relative;
+    width: 1em;
+    height: 1em;
+    border-radius: 0.5em;
+    background-color: yellow;
+    top: -45%;
+    left: -32%;
+    z-index: 200;
 }
-.stem-3 {
-    width: 3px;
-    height: 60px;
-    background-color: lime;
-    transform: rotate(-45deg);
-    top: -120%;
-    left: 37%;
-    position: relative;
+
+.petal1 {
+    width: 1em;
+    height: 1em;
+    border-radius: 0 50% 50% 50%;
+    border: 2px solid #c8a2c8;
+    background-color: #c8a2c8;
+    position: absolute;
+    left: 2%;
+    top: 49%;
+    z-index: 199;
+}
+.petal2 {
+    width: 1em;
+    height: 1em;
+    border-radius: 0 50% 50% 50%;
+    border: 2px solid #c8a2c8;
+    background-color: #c8a2c8;
+    position: absolute;
+    left: 27%;
+    top: -15%;
+    z-index: 199;
+    transform: rotate(-40deg);
+}
+.petal3 {
+    width: 1em;
+    height: 1em;
+    border-radius: 0 50% 50% 50%;
+    border: 2px solid #c8a2c8;
+    background-color: #c8a2c8;
+    position: absolute;
+    left: -20%;
+    top: -95%;
+    z-index: 199;
+    transform: rotate(-90deg);
+}
+.petal4 {
+    width: 1em;
+    height: 1em;
+    border-radius: 0 50% 50% 50%;
+    border: 2px solid #c8a2c8;
+    background-color: #c8a2c8;
+    position: absolute;
+    left: -118%;
+    top: -56%;
+    z-index: 199;
+    transform: rotate(-180deg);
+}
+.petal5 {
+    width: 1em;
+    height: 1em;
+    border-radius: 0 50% 50% 50%;
+    border: 2px solid #c8a2c8;
+    background-color: #c8a2c8;
+    position: absolute;
+    left: -115%;
+    top: 45%;
+    z-index: 199;
+    transform: rotate(90deg);
+}
+.petal6 {
+    width: 1em;
+    height: 1em;
+    border-radius: 0 50% 50% 50%;
+    border: 2px solid #c8a2c8;
+    background-color: #c8a2c8;
+    position: absolute;
+    z-index: 199;
+    right: 4px;
+    top: 63%;
+    transform: rotate(90deg);
 }
 
 @keyframes foldTop {
@@ -260,5 +329,14 @@ body {
     }
     100% { 
         opacity: 1;
+    }
+}
+
+@keyframes spinFlower {
+    from {
+        transform:rotate(0deg)
+    }
+    to {
+        transform:rotate(360deg)
     }
 }
